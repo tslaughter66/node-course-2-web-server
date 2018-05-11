@@ -48,7 +48,7 @@ app.get('/', (req,res) => {
 
 app.get('/about',(req,res) => {
   res.render('about.hbs', {
-    pageTitle: 'About Page',
+    pageTitle: 'About Page'
   });
 });
 
@@ -58,6 +58,16 @@ app.get('/bad',(req,res) => {
   });
 });
 
+app.get('/projects',(req,res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is up on port ${port}.`);
 });
+
+// Create new "Projects" page
+// register the url
+// create .hbs file
